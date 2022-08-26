@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+main()
+{
+	int x,fd[2];
+	char buf[50],s[50];
+	pipe(fd);
+	while((x=fork())==-1);
+	if(x==0)
+	{
+		printf("调用子进程，子进程ID:%d\n",getpid());
+		sprintf(buf,"is sending a passage to parent!");
+		write(fd[1],buf,50);
+             printf("子进程已将消息写入管道！\n");
+		exit(0);
+	}
+	else 
+	{	printf("调用父进程，父进程ID：:%d\n",getpid());	
+		wait(0);
+		printf("返回父进程\n");
+		read(fd[0],s,50);
+		printf("%s%s\n","父进程读取到的消息：",s);
+	}
+}

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateUserInfoServlet</servlet-name>
+    <servlet-class>servlet.updateUserInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>adminFilebyUserServlet</servlet-name>
+    <servlet-class>servlet.adminFilebyUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteUserServlet</servlet-name>
+    <servlet-class>servlet.deleteUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>adminUpdateUserServlet</servlet-name>
+    <servlet-class>servlet.adminUpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>adminUserListServlet</servlet-name>
+    <servlet-class>servlet.adminUserListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>editUserListServlet</servlet-name>
+    <servlet-class>servlet.editUserListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>insertUserServlet</servlet-name>
+    <servlet-class>servlet.insertUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteGroupUsersServlet</servlet-name>
+    <servlet-class>servlet.deleteGroupUsersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateUserInfoServlet</servlet-name>
+    <url-pattern>/updateUserInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminFilebyUserServlet</servlet-name>
+    <url-pattern>/adminFilebyUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteUserServlet</servlet-name>
+    <url-pattern>/deleteUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminUpdateUserServlet</servlet-name>
+    <url-pattern>/adminUpdateUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminUserListServlet</servlet-name>
+    <url-pattern>/adminUserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>editUserListServlet</servlet-name>
+    <url-pattern>/editUserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>insertUserServlet</servlet-name>
+    <url-pattern>/insertUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteGroupUsersServlet</servlet-name>
+    <url-pattern>/deleteGroupUsersServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+    <display-name>characterFilter</display-name>
+    <filter-name>characterFilter</filter-name>
+    <filter-class>servlet.characterFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>characterFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>selectUserListServlet</display-name>
+    <servlet-name>selectUserListServlet</servlet-name>
+    <servlet-class>servlet.selectUserListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectUserListServlet</servlet-name>
+    <url-pattern>/selectUserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>adminFileListServlet</display-name>
+    <servlet-name>adminFileListServlet</servlet-name>
+    <servlet-class>servlet.adminFileListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>adminFileListServlet</servlet-name>
+    <url-pattern>/adminFileListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>selectFileServlet</display-name>
+    <servlet-name>selectFileServlet</servlet-name>
+    <servlet-class>servlet.selectFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectFileServlet</servlet-name>
+    <url-pattern>/selectFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deleteFileServlet</display-name>
+    <servlet-name>deleteFileServlet</servlet-name>
+    <servlet-class>servlet.deleteFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteFileServlet</servlet-name>
+    <url-pattern>/deleteFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deleteGroupFilesServlet</display-name>
+    <servlet-name>deleteGroupFilesServlet</servlet-name>
+    <servlet-class>servlet.deleteGroupFilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteGroupFilesServlet</servlet-name>
+    <url-pattern>/deleteGroupFilesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>selectUserFileServlet</display-name>
+    <servlet-name>selectUserFileServlet</servlet-name>
+    <servlet-class>servlet.selectUserFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectUserFileServlet</servlet-name>
+    <url-pattern>/selectUserFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>loginAdminServlet</display-name>
+    <servlet-name>loginAdminServlet</servlet-name>
+    <servlet-class>servlet.loginAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginAdminServlet</servlet-name>
+    <url-pattern>/loginAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>signUpAdminServlet</display-name>
+    <servlet-name>signUpAdminServlet</servlet-name>
+    <servlet-class>servlet.signUpAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signUpAdminServlet</servlet-name>
+    <url-pattern>/signUpAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>logoutAdminServlet</display-name>
+    <servlet-name>logoutAdminServlet</servlet-name>
+    <servlet-class>servlet.logoutAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>logoutAdminServlet</servlet-name>
+    <url-pattern>/logoutAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateFileAdminServlet</display-name>
+    <servlet-name>UpdateFileAdminServlet</servlet-name>
+    <servlet-class>servlet.UpdateFileAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateFileAdminServlet</servlet-name>
+    <url-pattern>/UpdateFileAdminServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>sortFileServlet</display-name>
+    <servlet-name>sortFileServlet</servlet-name>
+    <servlet-class>servlet.sortFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sortFileServlet</servlet-name>
+    <url-pattern>/sortFileServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

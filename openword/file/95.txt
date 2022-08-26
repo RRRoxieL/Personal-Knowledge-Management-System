@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+main()
+{
+	int x,fd[2];
+	char buf[50],s[50];
+	pipe(fd);
+	while((x=fork())==-1);
+	if(x==0)
+	{
+		printf("子进程正在执行，ID:%d\n",getpid());
+		sprintf(buf,"is sending a passage to parent!");
+		write(fd[1],buf,50);
+		exit(0);
+	}
+	else 
+	{		
+		wait(0);
+		printf("返回父进程，父进程ID：:%d\n",getpid());
+		read(fd[0],s,50);
+		printf("%s\n",s);
+	}
+}
